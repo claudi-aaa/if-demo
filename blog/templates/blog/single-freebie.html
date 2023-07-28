@@ -1,0 +1,80 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+{% block meta_description %}{{ item.summary }}{% endblock %}
+
+{% block title %}Inkflasks | Freebie - {{ item.title }}{% endblock %}
+
+    
+    
+{% block content %}
+<div class="container-fluid welcome-header">
+
+
+    <!--welcome section-->
+    <section class="container-fluid">
+      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+        <h1 class="display-4 text-white fw-bold">Freebies</h1>
+        <p class="lead my-3 text-white">Get the free monthly template before it leaves!</p>
+        <p class="lead mb-0 text-white fw-bold">Links and downloads below </p>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-8">
+        
+
+        <!--  single-freebie section-->
+
+        <article class="blog-post">
+            {% comment %} add ahref later {% endcomment %}
+              <div>
+                  {% for tag in item.tags.all %}
+                    <span class="badge bg-dark tag"> {{ tag }} </span>
+                  {% endfor %}
+                </div>
+                
+              <h3 class="blog-post-title pt-2">{{ item.title }}</h3>
+              <p class="blog-post-meta"> {{ item.date }} </p>
+                {% comment %} <img src="{{ item.image.url}}" class="img-fluid rounded" alt="{{ item.title }}"> {% endcomment %}
+                <div class="blog-content pt-3">
+                  {{ item.content.html|safe }}
+                </div>
+
+              <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+                <h1 class="display-4 text-white fw-bold">Links:</h1>
+                <p class="lead mb-0 text-white fw-bold">Get template in desired format below:</p>
+                  {% if item.canva_link %}
+                    <span><a href="{{ item.canva_link }}"><button class="freebie-btn">✨ Canva</button></a><span>
+                  {% endif %}
+                  {% if item.google_link %}
+                    <span><a href="{{ item.google_link }}"><button class="freebie-btn">✨ Google</button></a></span>
+                  {% endif %}
+                  {% if item.dropbox_link %}
+                    <span><a href="{{ item.dropbox_link }}"><button class="freebie-btn">✨ Dropbox</button></a></span>
+                  {% endif %}
+                </div>
+                <img src="{% static 'blog/images/signature.png' %}" alt="" class="img-fluid">
+              </div>
+      
+      
+      
+
+      <!--  sticky about me section-->
+      {% include 'blog/includes/about-sidebar.html' %}
+    </div>
+  </section>
+
+
+</div>
+{% endblock %}
+
+
+

@@ -1,0 +1,99 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+{% block title %}Inkflasks | About{% endblock %}
+
+
+{% block content %}
+
+
+
+<section class="container-fluid">
+    <section class="container-fluid">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+          <div class="col-md-6 px-0">
+            <h1 class="display-4 fw-bold">About</h1>
+            <p class="lead my-3">All about the human behind the digital screen (aka everything google already knows about me)</p>
+          </div>
+        </div>
+      </section>
+
+
+    <div class="row">
+        <div class="col-md-6 px-4 pt-4 d-flex align-items-end">
+            <img src="{% static 'blog/images/creator.png' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 px-4 pb-4 pt-md-5 text-dark">
+            <h3 class="fw-bold speech-bubble">Cue the introvert's panic when told, "Describe yourself..."</h3>
+        </div>
+    </div>
+
+
+
+    <div class="row text-white bg-dark">
+        <div class="col-md-6 px-4 py-5 pb-sm-3">
+            <h3 class="display-4 fw-bold">Hi, I'm Claudia, the creator of Inkflasks</h3>
+        </div>
+        <div class="col-md-6 px-4 pb-4 pt-sm-2 pt-md-5 text-white">
+            <p> I make illustrations and designs, sometimes with a scientific flair.
+                Coming from an academic background, I understand the limitations we sometimes face when communicating our ideas. Whether it
+                be deadlines, rules, or stubborn traditions. I create digital templates for others to use.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 p-4 p-md-5 mb-4 text-dark">
+            <img src="{% static 'blog/images/swiftie.png' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 p-4 p-md-5 mb-4 text-dark">
+            <h3 class="display-4 fw-bold">1) I am a Swiftie</h3>
+            <p>I listen to an obscene amount of Taylor Swift. Or at least that is what my Spotify data tells me.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 p-4 p-md-5 mb-4 text-dark">
+            <img src="{% static 'blog/images/teatime.png' %}" class="img-fluid">
+        </div>
+        <div class="col-md-6 p-4 p-md-5 mb-4 text-dark align-center">
+            <h3 class="display-4 fw-bold">2) I am a tea lover</h3>
+            <p>Oolong, Green, Herbal, Etc. - I will happily take any warm or iced beverage.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 p-4 p-md-5 mb-4 text-dark">
+            <img src="{% static 'blog/images/potions.png' %}" class="img-fluid">
+        </div>
+        <div class="col-md-6 p-4 p-md-5 mb-4 text-dark">
+            <h3 class="display-4 fw-bold">3) I am a wizard</h3>
+            <p>While I can't make enchanted potions, I am a self-proclaimed PowerPoint wizard.</p>
+        </div>
+    </div>
+
+
+    <div class="row bottom-row orange-background">
+        <div class="col-md-6 px-4 pt-4 pt-md-5 pb-md-3 p-lg-5 text-white">
+            <h3 class="display-4 fw-bold">Welcome Aboard!</h3>
+            <p>*Admissions excludes jerks, snakes, and overall not-so-kind people</p>
+        </div>
+        <div class="col-md-6 px-4 pb-4 pt-md-4 p-lg-5 text-white">
+            <p class="lead my-3">This project is a bit like life - an unpredictable jumble of things. I work hard,
+                but try not to take myself too seriously. Come join me on my marching mayhem train.</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+</section>
+
+
+
+{% endblock %}
+
+

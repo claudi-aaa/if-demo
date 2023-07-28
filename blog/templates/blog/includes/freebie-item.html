@@ -1,0 +1,21 @@
+ <article class="blog-post">
+    {% comment %} add ahref later {% endcomment %}
+    <a href="/freebies/{{ item.slug }}">
+      {% comment %} <img src="{{ item.image.url}}" class="img-fluid rounded" alt="{{ item.title }}"> {% endcomment %}
+      <h3 class="blog-post-title pt-2">{{ item.title }}</h3>
+              
+      {% comment %} add dynamic badges later {% endcomment %}
+      <div>
+        {% for tag in item.tags.all %}
+          <span class="badge bg-dark tag"> {{ tag }} </span>
+        {% endfor %}
+      </div>
+
+      <p class="blog-post-meta pt-1"> {{ item.date }} </p>
+      <p>
+        {{ item.summary }}
+      </p>
+      <button class="fancy-btn"><span>Get me</span></button>
+    </a>
+  </article>
+

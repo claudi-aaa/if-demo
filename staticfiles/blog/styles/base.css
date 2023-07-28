@@ -1,0 +1,262 @@
+
+.navbar-brand{
+  font-family: "Gluten", sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  padding-left: 1rem;
+  justify-content: left;
+}
+
+#navbarNav {
+  justify-content: right;
+  padding-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #FF9E26;
+}
+
+.navbar-toggler {
+  margin: 1rem;
+}
+
+.blog-header {
+  line-height: 1;
+  text-decoration: none;
+
+}
+
+.blog-header-logo {
+  font-family: "Gluten", cursive;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+
+.redirect-link {
+  color: black;
+}
+
+.redirect-link:hover,
+ .redirect-link:active {
+  color: #FF9E26;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gluten", cursive;
+}
+
+.fancy-btn {
+  background-color: white;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: "Gluten", sans-serif;
+  font-weight: 900;
+  color: #212529;
+  box-shadow: 0.25rem 0.25rem #212529;
+  transition: 0.2s
+}
+
+.fancy-btn:hover {
+  background-color: #212529;
+  color: white;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: "Gluten", sans-serif;
+  box-shadow: none;
+}
+
+.freebie-btn {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: "Gluten", sans-serif;
+  font-weight: 900;
+  color: #212529;
+  transition: 0.3s;
+  margin-right: 1rem;
+  margin: 2rem 1rem 0 0;
+}
+
+.freebie-btn:hover {
+  background-color: #FF9E26;
+  color: white;
+  border: 2px solid #FF9E26;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: "Gluten", sans-serif;
+  box-shadow: none;
+}
+
+.list-freebies {
+  list-style-type: none;
+}
+
+.list-freebies li{
+  margin: 1rem;
+}
+
+.post-title {
+  font-weight: 600;
+}
+
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+
+/* About Section */
+
+.speech-bubble {
+ background-color: white;
+ border: solid 2px #212529;
+ border-radius: 5px;
+ padding: 3rem;
+}
+
+.about-header h1 {
+  font-weight: 600;
+}
+
+.about-bottom {
+  margin: 0;
+  border: none;
+}
+
+
+.orange-background {
+  background-color: #FF9E26;
+}
+
+
+
+/* Contact Section */
+#contactForm input {
+  border-radius: 5px;
+}
+
+#inputMessage {
+  width: 100%;
+  height: 200px;
+}
+
+#contact-form {
+  width: 100%;
+}
+
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+
+.page-btn {
+  background-color: #212529;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  font-family: "Gluten", sans-serif;
+  font-weight: 900;
+  color: white;
+  transition: 0.3s
+}
+
+.page-btn:hover {
+  background-color: #FF9E26;
+  color: white;
+  border: 2px solid #FF9E26;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: "Gluten", sans-serif;
+  box-shadow: none;
+}
+
+
+btn-dark:hover {
+  background-color: #FF9E26;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  padding: 2rem;
+
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+.signature {
+  justify-content: right;
+  align-content: right;
+}
+
+/* Footer */
+
+
+.blog-footer {
+  padding: 2.5rem 0;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
+
+.blog-footer a {
+  color: #FF9E26;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+

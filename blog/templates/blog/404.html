@@ -1,0 +1,41 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block meta_description %}404 Error{% endblock %}
+
+{% block title %}Inkflasks | 404 {% endblock %}
+
+    
+    
+{% block content %}
+<div class="container-fluid welcome-header">
+
+
+    <!--welcome section-->
+    <section class="container-fluid">
+      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+        <h1 class="display-4 text-white fw-bold">404 Error</h1>
+        <p class="lead my-3 text-white">Sorry, it seems something went wrong</p>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-8">
+      </div>
+      
+      
+
+      <!--  sticky about me section-->
+      {% include 'blog/includes/about-sidebar.html' %}
+    </div>
+  </section>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block meta_description %}Free and premium digital templates made for PowerPoint, Canva, and Google{% endblock %}
+
+{% block title %}Inkflasks | Digital templates and illustrations{% endblock %}
+
+    
+    
+{% block content %}
+<div class="container-fluid welcome-header">
+
+
+    <!--welcome section-->
+    <section class="container-fluid">
+      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <a href="https://www.etsy.com/shop/Inkflasks">
+            <h1 class="display-4 text-white fw-bold">Browse Shop</h1>
+            <p class="lead my-3 text-white">Find the perfect template to suit your needs. Featuring templates made for PowerPoint, Canva and Google Slides</p>
+            <p class="lead mb-0 text-white fw-bold">Find premium template</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section class="container-fluid">
+    <div class="row">
+
+      <!--  blog section-->
+
+      <div class="col-md-8">
+        <h2 class="fw-bold">Latest from the Inkpress</h2>
+
+        {% for post in posts %}
+          {% include "blog/includes/post-preview.html"%}
+        {% endfor %}
+      </div>
+
+
+      <!--  sticky about me section-->
+
+      {% include 'blog/includes/about-sidebar.html' %}
+    </div>
+  </section>
+
+
+</div>
+{% endblock %}
+

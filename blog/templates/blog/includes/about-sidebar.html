@@ -1,0 +1,29 @@
+{% load static %}
+
+
+<div class="col-md-4">
+    <div class="sticky-sidebar position-sticky" style="top: 2rem;">
+    <h2 class="fw-bold">About Inkflasks</h2>
+    <img src="{% static 'blog/images/if_logo.png'%}" alt="" width="170" height="170">
+    <p class="mb-5">Hi, I'm Claudia the creator of Inkflasks. I am a self-proclaimed PowerPoint wizard and die hard
+      Swiftie (or so my Spotify tells me).</p>
+
+      <h4 class="fw-bold">Find me elsewhere</h4>
+      <ol class="list-unstyled ms-4 mb-5">
+        <li class="pb-2"><a class="redirect-link" href="mailto:inkflasks@gmail.com">📫 Email</a></li>
+        <li class="pb-2"><a class="redirect-link" href="https://www.instagram.com/inkflasks/" target="_blank">📸 Instagram</a></li>
+        <li class="pb-2"><a class="redirect-link" href="https://www.youtube.com/channel/UCyLxKryWfj_kw96hoPUXcUg" target="_blank">📹 YouTube</a></li>
+      </ol>
+
+      <h4 class="fw-bold">Quick Links</h4>
+      <ol class="list-unstyled mb-5 ms-4">
+        <li class="pb-2"><a class="redirect-link" href="{% url 'posts' %}">⭐ Blog</a></li>
+        <li class="pb-2"><a class="redirect-link" href="{% url 'freebies' %}">🎁 Freebies</a></li>
+        <li class="pb-2"><a class="redirect-link" href="https://www.etsy.com/shop/Inkflasks">🛒 Shop</a></li>
+        <li class="pb-2"><a class="redirect-link" href="{% url 'contact' %}">👋 Contact</a></li>
+        <li class="pb-2"><a class="redirect-link" href="{% url 'privacy' %}">🔒 Privacy + Cookies</a></li>
+        <li class="pb-4"><a class="redirect-link" href="{% url 'conditions' %}">🤝 Terms + Conditions</a></li>
+      </ol>
+
+    </div>
+</div>
